@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <main>
+        <h1>Weather App</h1>
+
+        <fieldset>
+            <label for="cityName">Enter city name:</label>
+            <input type="text" id="cityName" autocomplete="off">
+            <button onclick="fetchWeatherData()">Fetch data</button>
+        </fieldset>
+
+        <article>
+            <h2>Current weather</h2>
+            <p id="currentTemperature">Temperature</p>
+            <img id="currentConditionIcon" src="" alt="Current condition icon">
+            <p id="currentConditionText">Condition</p>
+            <p>Wind: <span id="currentWind">-</span></p>
+            <p>Precip: <span id="currentPrecip">-</span></p>
+            <p id="currentAtmosphericPressure">Atmospheric pressure</p>
+        </article>
+
+        <div class="forecast">
+            <article>
+                <h2 class="day">Day 1</h2>
+                <div class="temperatures">
+                    <p class="minTemperature">Temperature (min)</p>
+                    <p class="maxTemperature">Temperature (max)</p>
+                </div>
+                <img class="conditionIcon" src="" alt="Day 1 condition icon">
+                <p class="conditionText">Condition</p>
+                <p>Wind: <span class="wind">-</span></p>
+                <p>Precip: <span class="precip">-</span></p>
+            </article>
+            <article>
+                <h2 class="day">Day 2</h2>
+                <div class="temperatures">
+                    <p class="minTemperature">Temperature (min)</p>
+                    <p class="maxTemperature">Temperature (max)</p>
+                </div>
+                <img class="conditionIcon" src="" alt="Day 2 condition icon">
+                <p class="conditionText">Condition</p>
+                <p>Wind: <span class="wind">-</span></p>
+                <p>Precip: <span class="precip">-</span></p>
+            </article>
+            <article>
+                <h2 class="day">Day 3</h2>
+                <div class="temperatures">
+                    <p class="minTemperature">Temperature (min)</p>
+                    <p class="maxTemperature">Temperature (max)</p>
+                </div>
+                <img class="conditionIcon" src="" alt="Day 3 condition icon">
+                <p class="conditionText">Condition</p>
+                <p>Wind: <span class="wind">-</span></p>
+                <p>Precip: <span class="precip">-</span></p>
+            </article>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
